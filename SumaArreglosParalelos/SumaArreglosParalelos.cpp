@@ -1,8 +1,8 @@
 #include <iostream>
 #include <omp.h>
-
+ 
 #define N 10        //Numero de elementos de arreglos
-#define chunk 5     //Tamaño de porción de operaciones por arreglo
+#define chunk 5     //TamaÃ±o de porciÃ³n de operaciones por arreglo
 #define nthreads 2  //Numero de threads
 
 void imprimearreglo(float* a) {
@@ -18,7 +18,7 @@ int main() {
     // Inicializamos los arreglos
     for (int i = 0; i < N; i++) {
         A[i] = i;
-        B[i] = rand() % 100;  // Números aleatorios entre 0 y 99
+        B[i] = rand() % 100;  // NÃºmeros aleatorios entre 0 y 99
     }
 
     // Sumamos los arreglos en paralelo
